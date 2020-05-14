@@ -1,0 +1,53 @@
+
+body{padding: 3%;background-color: #0D47A1;}
+
+.container{
+    max-width: 700px;   min-height: 500px; 
+}
+
+.alarm{
+    position: relative;
+}
+
+.clockToggle{
+    width: 145px;   height:38px;
+    float: right;  
+    position: relative;    
+    z-index: 1;
+    margin: 5px;    text-align: center;
+    margin-right: 15px;
+    transition: .2s ease all;
+
+}
+.clock{
+    opacity: 0;
+    width: 145px;   height:38px;
+    overflow: hidden;   text-align: center;
+    float: right;
+    transition: .2s ease all;
+    margin-right: 15px;
+}
+
+.clockToggle .input-group input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }input[type=number]{-moz-appearance: textfield;}
+
+
+  .clockToggle .input-group input,.clock .input-group input,select{
+      background-color: #444;    color: #eee;
+  }
+
+
+  .input-group, .clockToggle, .clock{
+    box-shadow: 0px 0px 10px #224;
+  }
+
+.table{box-shadow: 0 0 10px  #335;transform: translateY(-20px);}
+.table tbody tr td{ padding-right: 8px; padding-left: 8px; } 
+
+.star,.done,.del{width: 15px;cursor: pointer;}
+.star:hover,.done:hover,.del:hover{opacity: .8;}
+.task{width: 100%;font-size: 18px;}
+
+.time{width: 70px;font-size: small;}
+

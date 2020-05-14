@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="todoStyle.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        
+        <div class="input-group input-group-resposive">
+
+            <input type="text" class="form-control task" placeholder="add task">
+            <div class="input-group-append">
+
+              <button type="button" class="btn btn-dark alarm" style="padding-top:0; padding-bottom: 1pt;" onclick="toggleClock()" >
+                <img src="alarm.svg" width="25" height="25" style="filter: invert();">
+              </button>
+              <button type="button" class="btn btn-danger addTask" >ADD</button>
+            </div>
+
+        </div>
+        <div class="clock">
+            <div class="input-group">
+                <input type="number" aria-label="First name" class="form-control hour" value="12" max="12" min="1">
+                <input type="number" aria-label="Last name" class="form-control min" value="30" max="59" min="0">
+                <select class="ampm">
+                  <option value='AM'>AM</option>
+                  <option value='AM'>PM</option>
+                </select>
+              </div>
+        </div>
+
+        
+        <table class="table table-responsive table-light">    
+          <tbody class="list">
+            
+          </tbody>
+        </table>
+        
+
+    </div>
+    
+    
+    
+    
+
+
+
+</body>
+<script src="todo.js"></script>
+</html>
