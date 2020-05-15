@@ -26,6 +26,7 @@ if (localStorage.tasks != undefined) {
 
 
 document.querySelector(".addTask").onclick = function () {
+   if(inputTask.value.trim()==="") return;
    let task = {
       id: new Date().getTime(),
       text: inputTask.value,
